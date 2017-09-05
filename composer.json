@@ -1,6 +1,6 @@
 {
-    "name": "/",
-    "description": "",
+    "name": "PowerlingSLS/MisterbabelApiClientPHP",
+    "description": "PHP Client library API for Misterbabel",
     "keywords": [
         "swagger",
         "php",
