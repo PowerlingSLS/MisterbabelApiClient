@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateJobs1Test
+ * FieldError1Test
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * CreateJobs1Test Class Doc Comment
+ * FieldError1Test Class Doc Comment
  *
  * @category    Class */
-// * @description CreateJobs1
+// * @description FieldError1
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class CreateJobs1Test extends \PHPUnit_Framework_TestCase
+class FieldError1Test extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -71,16 +71,23 @@ class CreateJobs1Test extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "CreateJobs1"
+     * Test "FieldError1"
      */
-    public function testCreateJobs1()
+    public function testFieldError1()
     {
     }
 
     /**
-     * Test attribute "jobs"
+     * Test attribute "code"
      */
-    public function testPropertyJobs()
+    public function testPropertyCode()
+    {
+    }
+
+    /**
+     * Test attribute "message"
+     */
+    public function testPropertyMessage()
     {
     }
 }

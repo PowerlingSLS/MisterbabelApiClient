@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateJobs1
+ * FieldError1
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * CreateJobs1 Class Doc Comment
+ * FieldError1 Class Doc Comment
  *
  * @category    Class
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class CreateJobs1 implements ArrayAccess
+class FieldError1 implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -47,14 +47,15 @@ class CreateJobs1 implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'Create jobs_1';
+    protected static $swaggerModelName = 'FieldError_1';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'jobs' => '\Swagger\Client\Model\CreateJobs[]'
+        'code' => 'int',
+        'message' => 'object'
     ];
 
     /**
@@ -62,7 +63,8 @@ class CreateJobs1 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'jobs' => null
+        'code' => null,
+        'message' => null
     ];
 
     public static function swaggerTypes()
@@ -80,7 +82,8 @@ class CreateJobs1 implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'jobs' => 'jobs'
+        'code' => 'code',
+        'message' => 'message'
     ];
 
 
@@ -89,7 +92,8 @@ class CreateJobs1 implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'jobs' => 'setJobs'
+        'code' => 'setCode',
+        'message' => 'setMessage'
     ];
 
 
@@ -98,7 +102,8 @@ class CreateJobs1 implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'jobs' => 'getJobs'
+        'code' => 'getCode',
+        'message' => 'getMessage'
     ];
 
     public static function attributeMap()
@@ -132,7 +137,8 @@ class CreateJobs1 implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['jobs'] = isset($data['jobs']) ? $data['jobs'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
     }
 
     /**
@@ -144,6 +150,9 @@ class CreateJobs1 implements ArrayAccess
     {
         $invalid_properties = [];
 
+        if ($this->container['message'] === null) {
+            $invalid_properties[] = "'message' can't be null";
+        }
         return $invalid_properties;
     }
 
@@ -156,27 +165,51 @@ class CreateJobs1 implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['message'] === null) {
+            return false;
+        }
         return true;
     }
 
 
     /**
-     * Gets jobs
-     * @return \Swagger\Client\Model\CreateJobs[]
+     * Gets code
+     * @return int
      */
-    public function getJobs()
+    public function getCode()
     {
-        return $this->container['jobs'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets jobs
-     * @param \Swagger\Client\Model\CreateJobs[] $jobs
+     * Sets code
+     * @param int $code
      * @return $this
      */
-    public function setJobs($jobs)
+    public function setCode($code)
     {
-        $this->container['jobs'] = $jobs;
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
+     * @return object
+     */
+    public function getMessage()
+    {
+        return $this->container['message'];
+    }
+
+    /**
+     * Sets message
+     * @param object $message
+     * @return $this
+     */
+    public function setMessage($message)
+    {
+        $this->container['message'] = $message;
 
         return $this;
     }

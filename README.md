@@ -94,6 +94,8 @@ Class | Method | HTTP request | Description
  - [AuthToken1User](docs/Model/AuthToken1User.md)
  - [Credentials](docs/Model/Credentials.md)
  - [Credentials1](docs/Model/Credentials1.md)
+ - [FieldError](docs/Model/FieldError.md)
+ - [FieldError1](docs/Model/FieldError1.md)
  - [GetJobs](docs/Model/GetJobs.md)
  - [JobCreated](docs/Model/JobCreated.md)
  - [JobGet](docs/Model/JobGet.md)

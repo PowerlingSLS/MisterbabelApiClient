@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateJobsTest
+ * FieldErrorTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * CreateJobsTest Class Doc Comment
+ * FieldErrorTest Class Doc Comment
  *
  * @category    Class */
-// * @description CreateJobs
+// * @description FieldError
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class CreateJobsTest extends \PHPUnit_Framework_TestCase
+class FieldErrorTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -71,93 +71,23 @@ class CreateJobsTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "CreateJobs"
+     * Test "FieldError"
      */
-    public function testCreateJobs()
+    public function testFieldError()
     {
     }
 
     /**
-     * Test attribute "type"
+     * Test attribute "code"
      */
-    public function testPropertyType()
+    public function testPropertyCode()
     {
     }
 
     /**
-     * Test attribute "title"
+     * Test attribute "message"
      */
-    public function testPropertyTitle()
-    {
-    }
-
-    /**
-     * Test attribute "custom_reference"
-     */
-    public function testPropertyCustomReference()
-    {
-    }
-
-    /**
-     * Test attribute "lc_source"
-     */
-    public function testPropertyLcSource()
-    {
-    }
-
-    /**
-     * Test attribute "lc_target"
-     */
-    public function testPropertyLcTarget()
-    {
-    }
-
-    /**
-     * Test attribute "comment"
-     */
-    public function testPropertyComment()
-    {
-    }
-
-    /**
-     * Test attribute "file_url_source"
-     */
-    public function testPropertyFileUrlSource()
-    {
-    }
-
-    /**
-     * Test attribute "callback_url"
-     */
-    public function testPropertyCallbackUrl()
-    {
-    }
-
-    /**
-     * Test attribute "review"
-     */
-    public function testPropertyReview()
-    {
-    }
-
-    /**
-     * Test attribute "domain"
-     */
-    public function testPropertyDomain()
-    {
-    }
-
-    /**
-     * Test attribute "text_type"
-     */
-    public function testPropertyTextType()
-    {
-    }
-
-    /**
-     * Test attribute "reference_doc_url"
-     */
-    public function testPropertyReferenceDocUrl()
+    public function testPropertyMessage()
     {
     }
 }
