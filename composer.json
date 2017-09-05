@@ -1,6 +1,6 @@
 {
     "name": "PowerlingSLS/MisterbabelApiClientPHP",
-    "description": "PHP Client library API for Misterbabel",
+    "description": "PHP Client library for misterbabel",
     "keywords": [
         "swagger",
         "php",

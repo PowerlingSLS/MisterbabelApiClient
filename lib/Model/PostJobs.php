@@ -1,6 +1,6 @@
 <?php
 /**
- * JobsPost
+ * PostJobs
  *
  * PHP version 5
  *
@@ -32,14 +32,14 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * JobsPost Class Doc Comment
+ * PostJobs Class Doc Comment
  *
  * @category    Class
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class JobsPost implements ArrayAccess
+class PostJobs implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -47,7 +47,7 @@ class JobsPost implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'Jobs.Post';
+    protected static $swaggerModelName = 'Post Jobs';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

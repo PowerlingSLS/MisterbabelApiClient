@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **translateJobsPost**
-> \Swagger\Client\Model\CreateJobs[] translateJobsPost($jobs)
+> \Swagger\Client\Model\TranslatejobsJobs[] translateJobsPost($jobs)
 
 Create translation jobs
 
@@ -175,7 +175,7 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Auth-Token
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Auth-Token', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\TranslateApi();
-$jobs = new \Swagger\Client\Model\CreateJobs1(); // \Swagger\Client\Model\CreateJobs1 | 
+$jobs = new \Swagger\Client\Model\PostJobs(); // \Swagger\Client\Model\PostJobs | 
 
 try {
     $result = $api_instance->translateJobsPost($jobs);
@@ -190,11 +190,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jobs** | [**\Swagger\Client\Model\CreateJobs1**](../Model/CreateJobs1.md)|  | [optional]
+ **jobs** | [**\Swagger\Client\Model\PostJobs**](../Model/PostJobs.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CreateJobs[]**](../Model/CreateJobs.md)
+[**\Swagger\Client\Model\TranslatejobsJobs[]**](../Model/TranslatejobsJobs.md)
 
 ### Authorization
 

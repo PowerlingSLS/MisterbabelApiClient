@@ -1,4 +1,4 @@
-# JobsPost
+# PostJobs
 
 ## Properties
 Name | Type | Description | Notes

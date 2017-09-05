@@ -381,9 +381,9 @@ class TranslateApi
      *
      * Create translation jobs
      *
-     * @param \Swagger\Client\Model\CreateJobs1 $jobs  (optional)
+     * @param \Swagger\Client\Model\PostJobs $jobs  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\CreateJobs[]
+     * @return \Swagger\Client\Model\TranslatejobsJobs[]
      */
     public function translateJobsPost($jobs = null)
     {
@@ -396,9 +396,9 @@ class TranslateApi
      *
      * Create translation jobs
      *
-     * @param \Swagger\Client\Model\CreateJobs1 $jobs  (optional)
+     * @param \Swagger\Client\Model\PostJobs $jobs  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\CreateJobs[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\TranslatejobsJobs[], HTTP status code, HTTP response headers (array of strings)
      */
     public function translateJobsPostWithHttpInfo($jobs = null)
     {
@@ -439,15 +439,15 @@ class TranslateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\CreateJobs[]',
+                '\Swagger\Client\Model\TranslatejobsJobs[]',
                 '/translate/jobs'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\CreateJobs[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\TranslatejobsJobs[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\CreateJobs[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\TranslatejobsJobs[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
